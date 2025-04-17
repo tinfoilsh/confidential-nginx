@@ -1,0 +1,13 @@
+cvm-version: 0.0.23
+ovmf-version: 0.0.2
+cpus: 8
+memory: 16384
+
+shim:
+  domains:
+    - nginx.model.tinfoil.sh
+  listen-port: 443
+  upstream-port: 80
+
+containers:
+  - nginxdemos/hello
