@@ -10,4 +10,5 @@ shim:
   upstream-port: 80
 
 containers:
-  - nginxdemos/hello
+  - name: hello
+    image: nginxdemos/hello
